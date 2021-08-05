@@ -30,11 +30,13 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class InlineEditor extends InlineEditorBase {}
 
 // Plugins to include in the build.
 InlineEditor.builtinPlugins = [
+	Alignment,
 	Essentials,
 	UploadAdapter,
 	Autoformat,
@@ -73,6 +75,7 @@ InlineEditor.defaultConfig = {
 			'bulletedList',
 			'numberedList',
 			'|',
+			'alignment',
 			'outdent',
 			'indent',
 			'|',
